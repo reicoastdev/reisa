@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitação de Ajuda para Casamento Civil</title>
+    <style>
+      /* Estilos gerais */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      /* Estilos para o título */
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+      /* Estilos para o texto de solicitação de ajuda */
+      .help-text {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+      /* Estilos para o formulário de doação */
+      .donation-form {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .donation-form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .donation-form input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .donation-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      /* Estilos para a foto */
+      .photo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .photo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      /* Estilos para o parágrafo adicional */
+      .story-text {
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+      /* Estilos para o campo PIX */
+      .pix-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .p-pix {
+        margin: 5px;
+      }
+      .pix-input {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .pix-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .pix-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Um Convite Especial: Ajude-nos a Tornar Nosso Sonho em Realidade</h1>
+      <div class="help-text">
+        <p>Queridos amigos e familiares,</p>
+        <p>
+          Nossos corações estão transbordando de gratidão ao compartilhar este
+          momento especial com vocês. Como parte do ministério de louvor Z'amar,
+          temos vivido e respirado a música que eleva nossas almas ao Senhor.
+          Cada nota, cada harmonia, é uma expressão de nossa fé e amor por Ele.
+        </p>
+        <p>
+          Agora, estamos prestes a embarcar em uma jornada ainda mais sagrada:
+          unir nossos destinos em um sagrado compromisso diante de Deus e de
+          vocês, nossos amados. Como está escrito no Livro de Gênesis, "Portanto
+          deixará o homem a seu pai e a sua mãe, e unir-se-á à sua mulher, e
+          serão uma só carne" (Gênesis 2:24).
+        </p>
+        <p>
+          Cada um de vocês tem sido uma bênção em nossas vidas, um instrumento
+          nas mãos de Deus para nos guiar e nos amparar. Agora, pedimos
+          humildemente a sua ajuda para tornar o nosso casamento civil uma
+          celebração verdadeiramente memorável.
+        </p>
+        <p>
+          Qualquer contribuição que vocês puderem oferecer será recebida com
+          profunda gratidão e humildade. Juntos, podemos transformar este
+          momento em uma sinfonia de amor, fé e comunhão.
+        </p>
+      </div>
+
+      <div class="pix-container">
+        <h2 class="pix">Nossa chave Pix:</h2>
+        <p class="p-pix"><strong>Antônio Reinaldo Costa dos Santos</strong></p>
+        <p class="p-pix"><strong>Telefone</strong></p>
+
+        <input type="text" class="pix-input" value="85991399231" />
+        <button class="pix-button" onclick="copyPix()">Copiar</button>
+      </div>
+      <div class="photo">
+        <h2>O casal:</h2>
+        <img src="./reisa.jpg" alt="Foto do casal" />
+      </div>
+      <div class="story-text">
+        <p>
+          Sejam testemunhas de nossa jornada, caminhando conosco neste novo
+          capítulo de nossas vidas. Agradecemos a cada um de vocês por seu amor,
+          apoio e bênçãos.
+        </p>
+        <p>Com profunda gratidão e amor,</p>
+        <p>Casal Reisa</p>
+      </div>
+    </div>
+
+    <script>
+      function copyPix() {
+        var pixInput = document.querySelector(".pix-input");
+        pixInput.select();
+        document.execCommand("copy");
+        alert("Chave PIX copiada para a área de transferência!");
+      }
+    </script>
+  </body>
+</html>
